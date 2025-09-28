@@ -1,0 +1,127 @@
+backend:
+  name: git-gateway
+  branch: main # or master, depending on your Git setup
+
+# This line ensures Decap CMS assets are saved to the correct folder
+media_folder: "static/uploads" 
+public_folder: "/uploads"
+
+collections:
+  - name: "homepage"
+    label: "Homepage Settings"
+    # This will save all the fields to one file: _data/homepage.yml
+    files:
+      - label: "Homepage Content"
+        name: "homepage_content"
+        file: "_data/homepage.yml"
+        fields:
+          - label: "Site Title (in Browser Tab)"
+            name: "site_title"
+            widget: "string"
+            default: "Home - Sir M V Library"
+
+          - label: "Header/Branding"
+            name: "header_group"
+            widget: "object"
+            fields:
+              - label: "College Name (Short)"
+                name: "college_name_short"
+                widget: "string"
+              - label: "Library Tagline"
+                name: "library_tagline"
+                widget: "string"
+
+          - label: "Hero Section"
+            name: "hero_group"
+            widget: "object"
+            fields:
+              - label: "Hero Heading"
+                name: "hero_heading"
+                widget: "string"
+              - label: "Hero Subheading"
+                name: "hero_subheading"
+                widget: "string"
+              - label: "Hero Image"
+                name: "hero_image_path"
+                widget: "image"
+                default: "college.jpg"
+              - label: "Total Books Count (e.g., 20,906)"
+                name: "total_books_count"
+                widget: "string"
+              - label: "Established Year"
+                name: "established_year"
+                widget: "string"
+              - label: "UGC Recognition Year"
+                name: "ugc_recognition_year"
+                widget: "string"
+              - label: "Affiliation Name"
+                name: "affiliation_name"
+                widget: "string"
+              
+          - label: "Institution Details"
+            name: "institution_details"
+            widget: "object"
+            fields:
+              - label: "College Name (Full)"
+                name: "college_name_full"
+                widget: "string"
+              - label: "College Address"
+                name: "college_address"
+                widget: "text"
+              - label: "Telephone Number"
+                name: "telephone_number"
+                widget: "string"
+              - label: "Primary Email"
+                name: "primary_email"
+                widget: "string"
+              - label: "Secondary Email"
+                name: "secondary_email"
+                widget: "string"
+              - label: "UGC Recognition Date"
+                name: "ugc_recognition_date"
+                widget: "string"
+
+          - label: "Footer & Social Media"
+            name: "footer_group"
+            widget: "object"
+            fields:
+              - label: "Library Name in Footer"
+                name: "college_name_library"
+                widget: "string"
+              - label: "Library Slogan in Footer"
+                name: "library_slogan"
+                widget: "string"
+              - label: "Facebook URL"
+                name: "facebook_url"
+                widget: "string"
+              - label: "Instagram URL"
+                name: "instagram_url"
+                widget: "string"
+              - label: "Twitter URL"
+                name: "twitter_url"
+                widget: "string"
+
+
+  - name: "announcements"
+    label: "Announcements"
+    # This will save all announcements to one file: _data/announcements.yml
+    files:
+      - label: "Announcement List"
+        name: "announcement_list"
+        file: "_data/announcements.yml"
+        fields:
+          - label: "Announcements List"
+            name: "announcements_list"
+            widget: "list"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Body"
+                name: "body"
+                widget: "text"
+              - label: "Date"
+                name: "date"
+                widget: "datetime"
+                # Sort by date so the newest are first for the homepage loop
+                required: false

@@ -1,0 +1,14 @@
+# src/_data/announcements.yml
+announcements_list:
+  - title: "Library will remain closed on 2nd October for Gandhi Jayanti"
+    body: "The library will be closed for the national holiday. Normal operations resume the following day."
+    date: "2025-09-27T10:00:00+05:30"
+  - title: "New arrivals in Physics and Chemistry section"
+    body: "New textbooks and reference books available for issue."
+    date: "2025-09-20T10:00:00+05:30"
+  - title: "Workshop on Research Methodology next week"
+    body: "Register at the library counter or via email."
+    date: "2025-09-15T10:00:00+05:30"
+  - title: "Older Announcement (will not show on homepage)"
+    body: "This is a test to ensure only the top 3 appear."
+    date: "2025-09-01T10:00:00+05:30"

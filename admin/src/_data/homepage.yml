@@ -1,0 +1,30 @@
+# src/_data/homepage.yml
+site_title: "Home - Sir M V Library"
+
+header_group:
+  college_name_short: "Sir M V Science College"
+  library_tagline: "Library & Informatics Centre"
+
+hero_group:
+  hero_heading: "Welcome to Sir M. V. Government Science College Library"
+  hero_subheading: "Library & Informatics Centre — supporting learning, research and digital access."
+  hero_image_path: "college.jpg"
+  total_books_count: "20,906"
+  established_year: "1976"
+  ugc_recognition_year: "1999"
+  affiliation_name: "Kuvempu Univ."
+
+institution_details:
+  college_name_full: "Sir. M.V. Government Science College, Bommanakatte, Bhadravathi"
+  college_address: "Sir. M.V. Government Science College, Bommanakatte, Bhadravathi - 577302"
+  telephone_number: "08282-270296"
+  primary_email: "sirmvsciencebdvt@gmail.com"
+  secondary_email: "sirmvgsc@gmail.com"
+  ugc_recognition_date: "Aug-92 (CPP-1) and 12B-13-01-1999"
+
+footer_group:
+  college_name_library: "Sir M V Science College Library"
+  library_slogan: "Knowledge hub for students & faculty"
+  facebook_url: "https://facebook.com/your-page-link"
+  instagram_url: "https://instagram.com/your-account-link"
+  twitter_url: "https://twitter.com/your-account-link"
